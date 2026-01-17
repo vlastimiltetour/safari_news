@@ -7,17 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1v5ynEisSyjB_0ZEgAg3oZUBlye5TnkO8
 """
 
-!pip install selenium pandas webdriver-manager
+
 import smtplib
-
-!apt-get update
-!apt-get install -y wget gnupg
-!wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-!dpkg -i google-chrome-stable_current_amd64.deb
-!apt-get -f install -y
-
-!google-chrome --version
-
 import tempfile
 import shutil
 from selenium import webdriver
