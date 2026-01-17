@@ -60,7 +60,7 @@ class WebScraper():
       news_list.append(news)
 
     news_clean = [i.replace("\n", " ") for i in news_list]
-    html_content = news_clean
+    html_content = str(news_clean)
     self.driver.quit()
     return html_content
 
