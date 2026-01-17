@@ -79,7 +79,7 @@ class EmailSender():
     msg['To'] = ', '.join(recipients)
 
     # Attach HTML content
-    html_part = MIMEText(html_content, "html")
+    html_part = MIMEText(html_content, "plain", "utf-8")
     msg.attach(html_part)
 
     # Send the email
